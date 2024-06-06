@@ -69,6 +69,7 @@
             color: #84BC9C;
             text-decoration: none;
             font-size: 16px;
+            padding-top: 20px;
         }
         a:hover {
             color: #2CA58D;
