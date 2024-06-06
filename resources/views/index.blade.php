@@ -61,6 +61,15 @@
         <h1>COLLÈGE CAWEB</h1>
     </div>
     <section class="contenu">
+         <h2>Classes</h2>
+
+        {{-- Bouton vers page d'un groupe classe --}}
+        @foreach($groups as $group)
+            <a href="{{ route('groups.show', $group->id) }}">
+                <button>{{ $group->name }}</button>
+            </a>
+        @endforeach
+        
         <h2>Liste des élèves</h1>
 
                 <ul>
@@ -100,14 +109,6 @@
             <button>Ajouter un élève</button>
         </a>
 
-        <h2>Classes</h2>
-
-        {{-- Bouton vers page d'un groupe classe --}}
-        @foreach($groups as $group)
-            <a href="{{ route('groups.show', $group->id) }}">
-                <button>{{ $group->name }}</button>
-            </a>
-        @endforeach
     </section>
 </body>
 </html>
