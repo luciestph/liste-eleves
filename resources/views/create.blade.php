@@ -80,9 +80,6 @@
         <h1>COLLÈGE CAWEB</h1>
     </div>
     <div class="contenu">
-        <a href="{{ url('/students') }}">
-            &#x2190; Retourner à la liste
-        </a>
         <h2>Ajouter un élève</h2>
         <form action="{{ route('students.store') }}" method="POST">
             @csrf
