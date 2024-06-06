@@ -8,6 +8,7 @@
         body {
             font-family: 'Montserrat';
             background-color: #0A2342;
+            margin:0;
         }
         .main-title {
             background-color: #F46197;
@@ -16,12 +17,18 @@
         h1 {
             text-align: center;
             color: #FFFFFF;
-            font-size: 46px;
-            padding: 20px 0 20px 0;
+            font-size: 42px;
+            padding: 10px 0 10px 0;
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
         .contenu {
             padding: 2em 5% 2em 5%;
+            margin:auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
         }
         h2, h3 {
             color: #F46197;
@@ -30,6 +37,10 @@
         }
         ul, li, th, td, p {
             color: #FFFDF7;
+        }
+        .boutons-classes {
+            flex-direction: row;
+            margin-bottom: 1em;
         }
         button {
             margin: 10px 10px 10px 0;
@@ -60,16 +71,17 @@
     <div class="main-title">
         <h1>COLLÈGE CAWEB</h1>
     </div>
-    <section class="contenu">
-         <h2>Classes</h2>
+    <div class="contenu">
+        <h2>Classes</h2>
 
-        {{-- Bouton vers page d'un groupe classe --}}
-        @foreach($groups as $group)
-            <a href="{{ route('groups.show', $group->id) }}">
-                <button>{{ $group->name }}</button>
-            </a>
-        @endforeach
-        
+        <div class="boutons-classes">
+            {{-- Bouton vers page d'un groupe classe --}}
+            @foreach($groups as $group)
+                <a href="{{ route('groups.show', $group->id) }}">
+                    <button>{{ $group->name }}</button>
+                </a>
+            @endforeach
+        </div>
         <h2>Liste des élèves</h1>
 
                 <ul>
@@ -108,7 +120,6 @@
         <a href="{{ route('students.create') }}"> 
             <button>Ajouter un élève</button>
         </a>
-
-    </section>
+    </div>
 </body>
 </html>

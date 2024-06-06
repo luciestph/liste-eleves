@@ -8,6 +8,7 @@
         body {
             font-family: 'Montserrat';
             background-color: #0A2342;
+            margin:0;
         }
         .main-title {
             background-color: #F46197;
@@ -16,20 +17,30 @@
         h1 {
             text-align: center;
             color: #FFFFFF;
-            font-size: 46px;
-            padding: 20px 0 20px 0;
+            font-size: 42px;
+            padding: 10px 0 10px 0;
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
         .contenu {
             padding: 2em 5% 2em 5%;
+            margin:auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
         }
         h2, h3 {
             color: #F46197;
             font-size: 38px;
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
-        ul, li, th, td, p, label {
+        ul, li, th, td, label {
             color: #FFFDF7;
+        }
+        .boutons-classes {
+            flex-direction: row;
+            margin-bottom: 1em;
         }
         button {
             margin: 10px 10px 10px 0;
@@ -54,9 +65,13 @@
         th, td {
             padding-right: 15px;
         }
-        .contenu a {
+        a {
             color: #84BC9C;
             text-decoration: none;
+            font-size: 16px;
+        }
+        a:hover {
+            color: #2CA58D;
         }
     </style>
 </head>
@@ -64,7 +79,7 @@
     <div class="main-title">
         <h1>COLLÈGE CAWEB</h1>
     </div>
-    <section class="contenu">
+    <div class="contenu">
         <a href="{{ url('/students') }}">
             &#x2190; Retourner à la liste
         </a>
@@ -97,6 +112,9 @@
             </div>
             <button type="submit">Ajouter l'élève</button>
         </form>
-    </section>
+        <a href="{{ url('/students') }}">
+            &#x2190; Retourner à la liste
+        </a>
+    </div>
 </body>
 </html>
