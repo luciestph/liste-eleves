@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : ven. 07 juin 2024 à 10:41
+-- Généré le : ven. 07 juin 2024 à 11:19
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.2.12
 
@@ -172,9 +172,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('eLnPwyYAlCcxB6EbVA5ihlp7P6U4fYkxHqipKq0E', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiRDc0WDMyZnZpMjhjd1dtcDVWc0duV2lFU1cyb0hCV2ZJRTRHNGN6NCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDU6Imh0dHA6Ly9sb2NhbGhvc3QvbGlzdGUtZWxldmVzL3B1YmxpYy9zdHVkZW50cyI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1717749160),
-('EtfbmehIpddLcOpXJOod5SPu7S1ODua5hGLNZjyv', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoid3JnSnU4RFZla0dwRDJqMGE5cm9vNnRrSWRKNm9ZR295VGdQaTVVcyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDM6Imh0dHA6Ly9sb2NhbGhvc3Qvc2Nob29sLWFwcC9wdWJsaWMvc3R1ZGVudHMiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1717686512),
-('heWVhQ2yIHio9WSsn2Oif9e8UuEK51KPU6bhbn34', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiYjRHRVd4YUJ6TllNSnRSckoxZ0k3eUYxV3Fnc1U5OTZ2OGh6V2dSYSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDM6Imh0dHA6Ly9sb2NhbGhvc3Qvc2Nob29sLWFwcC9wdWJsaWMvc3R1ZGVudHMiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1717677454);
+('eLnPwyYAlCcxB6EbVA5ihlp7P6U4fYkxHqipKq0E', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiRDc0WDMyZnZpMjhjd1dtcDVWc0duV2lFU1cyb0hCV2ZJRTRHNGN6NCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDU6Imh0dHA6Ly9sb2NhbGhvc3QvbGlzdGUtZWxldmVzL3B1YmxpYy9zdHVkZW50cyI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1717751937);
 
 -- --------------------------------------------------------
 
@@ -199,7 +197,36 @@ INSERT INTO `students` (`id`, `first_name`, `last_name`, `date_of_birth`, `addre
 (1, 'Lucie', 'Stephan', '1999-05-01', 'Strasbourg', 3),
 (2, 'Norina', 'Mosbah', '1998-06-05', 'Strasbourg', 4),
 (3, 'Elsa', 'Tchissambo', '2001-04-13', 'Strasbourg', 1),
-(4, 'Margot', 'Seiller', '2000-12-20', 'Strasbourg', 2);
+(4, 'Margot', 'Seiller', '2000-12-20', 'Strasbourg', 2),
+(5, 'Sanji', 'Vinsmoke', '1999-03-02', 'Baratie', 3),
+(6, 'Luffy', 'Monkey D.', '1999-01-05', 'East Blue', 3),
+(7, 'Nami', 'Belmer', '2000-07-03', 'Kokoyashi', 2),
+(8, 'Zoro', 'Roronoa', '1998-11-11', 'Shimotsuki', 3),
+(9, 'Usopp', 'Sniperking', '2000-04-01', 'Sirop', 2),
+(10, 'Robin', 'Nico', '1998-02-06', 'Ohara', 4),
+(11, 'Tony Tony', 'Chopper', '2001-12-24', 'Drum', 1),
+(12, 'Franky', 'Cuttyflam', '1998-03-09', 'Water Seven', 4),
+(13, 'Brook', 'Laboon', '2001-04-03', 'Rumbar', 1),
+(14, 'Jinbe', 'Jinbe', '1998-04-02', 'Fishman island', 4),
+(15, 'Hancock', 'Boa', '2000-09-02', 'Amazon lily', 2),
+(16, 'Crocodile', 'Sir', '1998-09-05', 'Alabasta', 4),
+(17, 'Shanks', 'LeRoux', '1998-03-09', 'Grand Line', 4),
+(18, 'Ace', 'Portgas D.', '1999-01-01', 'East Blue', 3),
+(19, 'Vivi', 'Nefertari', '2000-02-02', 'Alabasta', 2),
+(20, 'Iceburg', 'Tom', '1999-11-30', 'Water Seven', 1),
+(21, 'Mihawk', 'Dracule', '2001-03-09', 'Kuraigana', 1),
+(22, 'Smoker', 'Captain', '1999-03-14', 'Marine', 3),
+(23, 'Kalifa', 'Kalifa', '2001-04-23', 'CP9', 1),
+(24, 'Koby', 'Koby', '2001-05-13', 'Marine', 1),
+(25, 'Rayleigh', 'Silvers', '1998-05-13', 'Sabaody', 4),
+(26, 'Lucci', 'Rob', '2000-06-02', 'CP', 2),
+(27, 'Charlotte', 'Pudding', '2001-06-25', 'WCI', 1),
+(28, 'Nojiko', 'Belmer', '1998-06-25', 'Kokoyashi', 4),
+(29, 'Buggy', 'Clown', '2000-08-08', 'East Blue', 2),
+(30, 'Bon', 'Clay', '1999-08-15', 'Alabasta', 3),
+(31, 'Pell', 'Falcon', '2000-08-23', 'Alabasta', 2),
+(32, 'Law', 'Trafalgar', '1998-10-06', 'Sabaody', 4),
+(33, 'Yamato', 'Oden', '1999-11-03', 'Grand Line', 3);
 
 -- --------------------------------------------------------
 
@@ -326,7 +353,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT pour la table `students`
 --
 ALTER TABLE `students`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT pour la table `users`
